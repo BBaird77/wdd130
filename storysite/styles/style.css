@@ -313,25 +313,27 @@ main section img {
 
 /*---------------------------------------------------------*/
 
+
 .home-grid3 {
     display: grid;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.home-title3{
+.home-title3 {
     color: #D4AF37;
     text-shadow:
-    1px 1px 0 #000,
-    -1px 1px 0 #000,
-    -1px -1px 0 #000,
-    1px -1px 0 #000;
+        1px 1px 0 #000,
+        -1px 1px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000;
     font-family: 'Merienda', sans-serif;
     font-size: 2em;
-    position: absolute;
-    top: 100px;
-    left: 200px
-   
+    position: absolute; /* Use absolute positioning */
+    top: 20%;           /* Center vertically */
+    left: 50%;          /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the element's own dimensions */
+    text-align: center; /* Ensure text inside the element is centered */
 }
 
 .hero-title3{
@@ -340,15 +342,17 @@ main section img {
 .home-title4{
     color: #D4AF37;
     text-shadow:
-    1px 1px 0 #000,
-    -1px 1px 0 #000,
-    -1px -1px 0 #000,
-    1px -1px 0 #000;
+        1px 1px 0 #000,
+        -1px 1px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000;
     font-family: 'Merienda', sans-serif;
     font-size: 2em;
-    position: absolute;
-    top: 950px;
-    left: 200px
+    position: absolute; /* Use absolute positioning */
+    top: 135%;           /* Center vertically */
+    left: 50%;          /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the element's own dimensions */
+    text-align: center; /* Ensure text inside the element is centered */
 }
 
 .Owain {
@@ -384,7 +388,7 @@ main section img {
 .Andraste {
     margin-top: 100px;
     margin-left: 25px;
-    grid-column: 4/8;
+    grid-column: 5/10;
     grid-row: 4/7;
     background-color: #D4AF37;
     line-height: 1.5em;
@@ -413,7 +417,7 @@ main section img {
 
 .ValenKron {
     margin-top: 150px;
-    grid-column: 4/8;
+    grid-column: 5/10;
     grid-row: 9/11;
 }
 .ValenKron h2 {
